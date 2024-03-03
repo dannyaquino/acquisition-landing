@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Sat Jan 06 2024 18:42:21 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65510a43cf64d17c0dc475a1" data-wf-site="63551553f9e1cc2dbed13450">
+  <head>
+    <meta charset="utf-8" />
+    <title>Application form</title>
+    <meta content="Application form" property="og:title" />
+    <meta content="Application form" property="twitter:title" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link href="css/acquisition-landing.webflow.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/styles.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      WebFont.load({ google: { families: ["Poppins:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"] } });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+    <!--  SpliderJS 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous"> -->
+    <!--  Codesandbox  -->
+    <link rel="stylesheet" href="https://kj9lrd.csb.app/styles.css" />
+    <style></style>
+  </head>
+  <body class="no-js">
+    <div class="page-wrapper smooth-scroll">
+      <header class="header header-sticky hide">
+        <div class="container header-wrapper">
+          <div class="logo">
+            <a href="/" class="w-inline-block"
+              ><img
+                src="images/logo-acquisition.png"
+                loading="lazy"
+                sizes="100vw"
+                srcset="images/logo-acquisition.png 500w, images/logo-acquisition.png 800w, images/logo-acquisition.png 1080w, images/logo-acquisition.png 1356w"
+                alt=""
+                class="logo-img"
+            /></a>
+          </div>
+          <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="nav w-nav">
+            <nav role="navigation" class="nav-menu nav-pointer w-nav-menu">
+              <a href="application-form" aria-current="page" class="nav-item nav-cta w-inline-block w--current">
+                <div class="btn-content btn-nav">
+                  <div class="btn_text">Apply</div>
+                </div>
+                <div class="btn-bg-hover"></div>
+              </a>
+            </nav>
+            <div data-lenis-toggle="" class="mobile-menu-btn">
+              <div class="mobile-menu-btn__line line-top"></div>
+              <div class="mobile-menu-btn__line line-center"></div>
+              <div class="mobile-menu-btn__line line-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header class="header main-header">
+        <div class="container header-wrapper">
+          <div class="logo">
+            <a href="/" class="w-inline-block"
+              ><img
+                src="images/logo-acquisition-white.png"
+                loading="lazy"
+                sizes="(max-width: 479px) 42vw, (max-width: 991px) 200px, 16vw"
+                srcset="
+                  images/logo-acquisition-white-p-500.png   500w,
+                  images/logo-acquisition-white-p-800.png   800w,
+                  images/logo-acquisition-white-p-1080.png 1080w,
+                  images/logo-acquisition-white.png        1356w
+                "
+                alt=""
+                class="logo-img"
+            /></a>
+          </div>
+          <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="nav w-nav">
+            <nav role="navigation" class="nav-menu nav-pointer w-nav-menu">
+              <div data-hover="true" data-delay="0" class="nav-item dropdown-v1 w-dropdown">
+                <div class="nav-item__toggle w-dropdown-toggle">
+                  <div class="nav-item__toggle-text">Home</div>
+                  <div class="nav-item__toggle--icon-medium w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="uuid-02e0b084-52cb-4933-b905-684f734ba0f3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #190731;
+                          }
+                        </style>
+                      </defs>
+                      <rect class="cls-1" x="6.64" y="7.25" width="5.66" height="1.5" transform="translate(-2.88 9.04) rotate(-45)"></rect>
+                      <rect class="cls-1" x="5.78" y="5.17" width="1.5" height="5.66" transform="translate(-3.74 6.96) rotate(-45)"></rect>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="nav-item__dropdown w-dropdown-list">
+                  <div class="nav-item__dropdown-wrapper">
+                    <a href="/" class="dropdown-item nav-item w-dropdown-link">Home v1</a>
+                    <a href="home-v2" class="dropdown-item nav-item w-dropdown-link">Home v2</a>
+                  </div>
+                </nav>
+              </div>
+              <a href="#" class="nav-item w-nav-link">About Us</a>
+              <div data-hover="true" data-delay="0" class="nav-item dropdown-v1 w-dropdown">
+                <div class="nav-item__toggle w-dropdown-toggle">
+                  <div class="nav-item__toggle-text">Training</div>
+                  <div class="nav-item__toggle--icon-medium w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="uuid-02e0b084-52cb-4933-b905-684f734ba0f3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #190731;
+                          }
+                        </style>
+                      </defs>
+                      <rect class="cls-1" x="6.64" y="7.25" width="5.66" height="1.5" transform="translate(-2.88 9.04) rotate(-45)"></rect>
+                      <rect class="cls-1" x="5.78" y="5.17" width="1.5" height="5.66" transform="translate(-3.74 6.96) rotate(-45)"></rect>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="nav-item__dropdown w-dropdown-list">
+                  <div class="nav-item__dropdown-wrapper">
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Books</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Courses</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Media</a>
+                  </div>
+                </nav>
+              </div>
+              <a href="#" class="nav-item w-nav-link">Speaking</a>
+              <div data-hover="true" data-delay="0" class="nav-item dropdown-v1 w-dropdown">
+                <div class="nav-item__toggle w-dropdown-toggle">
+                  <div class="nav-item__toggle-text">Careers</div>
+                  <div class="nav-item__toggle--icon-medium w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="uuid-02e0b084-52cb-4933-b905-684f734ba0f3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #190731;
+                          }
+                        </style>
+                      </defs>
+                      <rect class="cls-1" x="6.64" y="7.25" width="5.66" height="1.5" transform="translate(-2.88 9.04) rotate(-45)"></rect>
+                      <rect class="cls-1" x="5.78" y="5.17" width="1.5" height="5.66" transform="translate(-3.74 6.96) rotate(-45)"></rect>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="nav-item__dropdown w-dropdown-list">
+                  <div class="nav-item__dropdown-wrapper">
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Jobs</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Culture</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Blog</a>
+                  </div>
+                </nav>
+              </div>
+              <a href="#" lenis-link="faq" class="nav-item w-nav-link">FAQs</a>
+              <a href="application-form" class="nav-item w-nav-link">Apply</a>
+            </nav>
+            <div data-lenis-toggle="" class="mobile-menu-btn">
+              <div class="mobile-menu-btn__line line-top"></div>
+              <div class="mobile-menu-btn__line line-center"></div>
+              <div class="mobile-menu-btn__line line-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-wrapper">
+        <div class="form-section">
+          <div class="form-section-wrapper">
+            <div class="form__content">
+              <div class="container py-15 center">
+                <div class="custom-w-648">
+                  <div class="form-wrapper w-form">
+                    <form
+                      id="application-form"
+                      name="wf-form-Application-Form"
+                      data-name="Application Form"
+                      method="get"
+                      class="form multistep"
+                      data-wf-page-id="65510a43cf64d17c0dc475a1"
+                      data-wf-element-id="f4c93c0b-010e-94d8-f8f8-c657516037ea"
+                    >
+                      <div class="steps-nav">
+                        <div class="step-item">
+                          <div class="step-bg"></div>
+                          <div class="step-number">1</div>
+                        </div>
+                        <div class="step-divider">
+                          <div class="step-divider-fill"></div>
+                        </div>
+                        <div class="step-item">
+                          <div class="step-bg"></div>
+                          <div class="step-number">2</div>
+                        </div>
+                        <div class="step-divider">
+                          <div class="step-divider-fill"></div>
+                        </div>
+                        <div class="step-item">
+                          <div class="step-bg"></div>
+                          <div class="step-number">3</div>
+                        </div>
+                      </div>
+                      <div class="form-steps-wrapper">
+                        <div class="form-step active-step">
+                          <h2 class="form-step-title">Contact details</h2>
+                          <div class="form-group">
+                            <label for="af-name-2">Company name</label
+                            ><input class="w-input" maxlength="256" name="af-name" data-name="af-name" placeholder="" custom-form-data="required-field" type="text" id="af-name-2" required="" />
+                            <div error-for="af-name" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="af-company-website">Company&#x27;s website</label
+                            ><input
+                              class="w-input"
+                              maxlength="256"
+                              name="af-company-website"
+                              data-name="af-company-website"
+                              placeholder=""
+                              custom-form-data="required-field url"
+                              type="text"
+                              id="af-company-website"
+                              required=""
+                            />
+                            <div error-for="af-company-website" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="mf-phone">Phone number</label>
+                            <div class="form-hint">Please include your country and area codes.</div>
+                            <input class="w-input" maxlength="256" name="af-phone" data-name="af-phone" placeholder="" custom-form-data="required-field phone" type="tel" id="af-phone" required="" />
+                            <div error-for="af-phone" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="af-email-2">Email</label
+                            ><input class="w-input" maxlength="256" name="af-email" data-name="af-email" placeholder="" custom-form-data="required-field" type="email" id="af-email-2" required="" />
+                            <div error-for="af-email" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-buttons">
+                            <a href="#" class="btn form-step-next w-inline-block">
+                              <div class="btn-content btn-primary step-btn-next">
+                                <div class="btn_text">Next</div>
+                                <div class="btn_icon">
+                                  <div class="mdi-icon">arrow_forward</div>
+                                </div>
+                              </div>
+                              <div class="btn-bg-hover"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="form-step">
+                          <h2 class="form-step-title">Business details</h2>
+                          <div class="form-group">
+                            <label for="af-revenue">Annual revenue</label>
+                            <div class="select-wrapper">
+                              <select id="af-revenue" name="af-revenue" data-name="af-revenue" required="" custom-form-data="required-field" class="w-select">
+                                <option value="">Select your revenue</option>
+                                <option value="0-250k">$0 - $250K</option>
+                                <option value="250k-500k">$250K - $500K</option>
+                                <option value="500k-750k">$500K - $750K</option>
+                                <option value="750k-1m">$750K - $1M</option>
+                                <option value="1m-3m">$1M - $3M</option>
+                                <option value="3m-5m">$3M - $5M</option>
+                                <option value="5m-10m">$5M - $10M</option>
+                                <option value="10m-20m">$10M - $20M</option>
+                                <option value="20m+">$20M+</option>
+                              </select>
+                            </div>
+                            <div error-for="af-revenue" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="af-profit-12">Profits (EBITDA) over the past 12 months</label>
+                            <div class="select-wrapper">
+                              <select id="af-profit-12" name="af-profit-12" data-name="af-profit-12" required="" custom-form-data="required-field" class="w-select">
+                                <option value="">Select your profits</option>
+                                <option value="0-1m">$0 - $1M</option>
+                                <option value="1m-2m">$1M - $2M</option>
+                                <option value="2m-3m">$2M - $3M</option>
+                                <option value="3m-5m">$3M - $5M</option>
+                                <option value="5m-10m">$5M - $10M</option>
+                                <option value="10M+">$10M+</option>
+                              </select>
+                            </div>
+                            <div error-for="af-profit-12" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="af-profit-3">Profits (EBITDA) over the past 3 months</label>
+                            <div class="select-wrapper">
+                              <select id="af-profit-3" name="af-profit-3" data-name="af-profit-3" required="" custom-form-data="required-field" class="w-select">
+                                <option value="">Select your profits</option>
+                                <option value="0-250k">$0 - $250K</option>
+                                <option value="250K-500K">$250K - $500K</option>
+                                <option value="500k-750k">$500K - $750K</option>
+                                <option value="750k-1.25m">$750K - $1.25M</option>
+                                <option value="1.25m-2.5m">$1.25M - $2.5M</option>
+                                <option value="2.5M+">$2.5M+</option>
+                              </select>
+                            </div>
+                            <div error-for="af-profit-3" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div group-name="af-country" custom-form-data="required-group" class="form-group radio-group">
+                            <div class="radio-group-label">Where is your business based?</div>
+                            <label class="form-radio w-radio"
+                              ><input id="af-united-states" type="radio" name="af-country" data-name="af-country" required="" class="w-form-formradioinput w-radio-input" value="united-states" /><span
+                                class="w-form-label"
+                                for="af-united-states"
+                                >United States</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-canada" type="radio" name="af-country" data-name="af-country" class="w-form-formradioinput w-radio-input" value="canada" /><span
+                                class="w-form-label"
+                                for="af-canada"
+                                >Canada</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-other-country" type="radio" name="af-country" data-name="af-country" class="w-form-formradioinput w-radio-input" value="other-country" /><span
+                                class="w-form-label"
+                                for="af-other-country"
+                                >Other</span
+                              ></label
+                            >
+                            <div error-for="af-country" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div group-name="af-type" custom-form-data="required-group" class="form-group radio-group">
+                            <div class="radio-group-label">Type of business</div>
+                            <label class="form-radio w-radio"
+                              ><input id="af-service" type="radio" name="af-type" data-name="af-type" required="" class="w-form-formradioinput w-radio-input" value="service" /><span
+                                class="w-form-label"
+                                for="af-service"
+                                >Service</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-brick-mortar" type="radio" name="af-type" data-name="af-type" class="w-form-formradioinput w-radio-input" value="brick-mortar" /><span
+                                class="w-form-label"
+                                for="af-brick-mortar"
+                                >Brick &amp; Mortar</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-software" type="radio" name="af-type" data-name="af-type" class="w-form-formradioinput w-radio-input" value="software" /><span
+                                class="w-form-label"
+                                for="af-software"
+                                >Software</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-ecommerce" type="radio" name="af-type" data-name="af-type" class="w-form-formradioinput w-radio-input" value="ecommerce" /><span
+                                class="w-form-label"
+                                for="af-ecommerce"
+                                >E-commerce</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-elearning" type="radio" name="af-type" data-name="af-type" class="w-form-formradioinput w-radio-input" value="elearning" /><span
+                                class="w-form-label"
+                                for="af-elearning"
+                                >E-learning</span
+                              ></label
+                            >
+                            <div error-for="af-type" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="field">Describe your business in 1 to 3 sentences</label>
+                            <div class="form-hint">Example: I help dentists get patients using Facebook ads for $2000 per month.</div>
+                            <textarea
+                              class="w-input"
+                              maxlength="5000"
+                              name="af-description"
+                              data-name="af-description"
+                              placeholder=""
+                              custom-form-data="required-field"
+                              row="5"
+                              id="af-description"
+                              required=""
+                            ></textarea>
+                            <div error-for="af-description" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-buttons">
+                            <a href="#" class="btn form-step-back w-inline-block">
+                              <div class="btn-content btn-tertiary step-btn-back">
+                                <div class="btn_icon">
+                                  <div class="mdi-icon">arrow_back</div>
+                                </div>
+                                <div class="btn_text">Back</div>
+                              </div>
+                              <div class="btn-bg-hover"></div>
+                            </a>
+                            <a href="#" class="btn form-step-next w-inline-block">
+                              <div class="btn-content btn-primary step-btn-next">
+                                <div class="btn_text">Next</div>
+                                <div class="btn_icon">
+                                  <div class="mdi-icon">arrow_forward</div>
+                                </div>
+                              </div>
+                              <div class="btn-bg-hover"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="form-step">
+                          <h2 class="form-step-title">Confirmation</h2>
+                          <div group-name="af-help" custom-form-data="required-group" class="form-group radio-group">
+                            <div class="radio-group-label">Where do you need the most help?</div>
+                            <label class="form-radio w-radio"
+                              ><input id="leads" type="radio" name="af-help" data-name="af-help" required="" class="w-form-formradioinput w-radio-input" value="leads" /><span
+                                class="w-form-label"
+                                for="leads"
+                                >More leads</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="sales" type="radio" name="af-help" data-name="af-help" class="w-form-formradioinput w-radio-input" value="sales" /><span class="w-form-label" for="sales"
+                                >More sales</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-delivery" type="radio" name="af-help" data-name="af-help" class="w-form-formradioinput w-radio-input" value="delivery" /><span
+                                class="w-form-label"
+                                for="af-delivery"
+                                >Better delivery</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-team" type="radio" name="af-help" data-name="af-help" class="w-form-formradioinput w-radio-input" value="team" /><span class="w-form-label" for="af-team"
+                                >Grow team</span
+                              ></label
+                            >
+                            <div error-for="af-help" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div group-name="af-owner" custom-form-data="required-group" class="form-group radio-group">
+                            <div class="radio-group-label">Are you an owner who can decide how to allocate equity?</div>
+                            <label class="form-radio w-radio"
+                              ><input type="radio" data-name="af-owner" id="af-owner-yes" name="af-owner" required="" class="w-form-formradioinput w-radio-input" value="yes" /><span
+                                class="w-form-label"
+                                for="af-owner-yes"
+                                >Yes</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input type="radio" data-name="af-owner" id="af-owner-no" name="af-owner" class="w-form-formradioinput w-radio-input" value="no" /><span
+                                class="w-form-label"
+                                for="af-owner-no"
+                                >No</span
+                              ></label
+                            >
+                            <div error-for="af-owner" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div group-name="af-apply" custom-form-data="required-group" class="form-group radio-group">
+                            <div class="radio-group-label">Would you like us to consider your company to become a portfolio company? If not, we will only add you to our email list.</div>
+                            <label class="form-radio w-radio"
+                              ><input type="radio" data-name="af-apply" id="af-apply-yes" name="af-apply" required="" class="w-form-formradioinput w-radio-input" value="yes" /><span
+                                class="w-form-label"
+                                for="af-apply-yes"
+                                >Yes</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input type="radio" data-name="af-apply" id="af-apply-no" name="af-apply" class="w-form-formradioinput w-radio-input" value="no" /><span
+                                class="w-form-label"
+                                for="af-apply-no"
+                                >No</span
+                              ></label
+                            >
+                            <div error-for="af-apply" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div group-name="af-source" custom-form-data="required-group" class="form-group radio-group">
+                            <div class="radio-group-label">Where did you first hear about us?</div>
+                            <label class="form-radio w-radio"
+                              ><input id="af-instagram" type="radio" name="af-source" data-name="af-source" required="" class="w-form-formradioinput w-radio-input" value="instagram" /><span
+                                class="w-form-label"
+                                for="af-instagram"
+                                >Instagram</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-youtube" type="radio" name="af-source" data-name="af-source" class="w-form-formradioinput w-radio-input" value="youtube" /><span
+                                class="w-form-label"
+                                for="af-youtube"
+                                >Youtube</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-facebook" type="radio" name="af-source" data-name="af-source" class="w-form-formradioinput w-radio-input" value="facebook" /><span
+                                class="w-form-label"
+                                for="af-facebook"
+                                >Facebook</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-podcast" type="radio" name="af-source" data-name="af-source" class="w-form-formradioinput w-radio-input" value="podcast" /><span
+                                class="w-form-label"
+                                for="af-podcast"
+                                >Podcast</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-twitter" type="radio" name="af-source" data-name="af-source" class="w-form-formradioinput w-radio-input" value="twitter" /><span
+                                class="w-form-label"
+                                for="af-twitter"
+                                >X (Twitter)</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-linkedin" type="radio" name="af-source" data-name="af-source" class="w-form-formradioinput w-radio-input" value="linkedin" /><span
+                                class="w-form-label"
+                                for="af-linkedin"
+                                >LinkedIn</span
+                              ></label
+                            ><label class="form-radio w-radio"
+                              ><input id="af-other-source" type="radio" name="af-source" data-name="af-source" class="w-form-formradioinput w-radio-input" value="other" /><span
+                                class="w-form-label"
+                                for="af-other-source"
+                                >Other</span
+                              ></label
+                            >
+                            <div error-for="af-source" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div custom-form-data="required-group" group-name="af-privacy" class="form-group">
+                            <label class="w-checkbox form-checkbox acceptance"
+                              ><input id="af-privacy" type="checkbox" name="af-privacy" data-name="af-privacy" required="" custom-form-data="required-field acceptance" class="w-checkbox-input" /><span
+                                class="w-form-label"
+                                for="af-privacy"
+                                >By submitting, you are agreeing to our Terms and <a href="#">Privacy Policy</a>.</span
+                              ></label
+                            >
+                            <div error-for="af-privacy" class="error-msg">
+                              <div class="error-msg-wrapper">
+                                <img src="images/mdi_alert-circle.svg" loading="lazy" alt="" class="error-msg__icon" />
+                                <p class="error-msg__text"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-buttons">
+                            <a href="#" class="btn form-step-back w-inline-block">
+                              <div class="btn-content btn-tertiary step-btn-back">
+                                <div class="btn_icon">
+                                  <div class="mdi-icon">arrow_back</div>
+                                </div>
+                                <div class="btn_text">Back</div>
+                              </div>
+                              <div class="btn-bg-hover"></div>
+                            </a>
+                            <div class="w-embed">
+                              <button class="btn btn-submit w-inline-block">
+                                <div class="btn-content btn-primary">
+                                  <div class="btn_text">Submit</div>
+                                </div>
+                                <div class="btn-bg-hover"></div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                      <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer" class="footer">
+        <div class="container pt-15 pb-10">
+          <div class="footer-top grid-12-g3">
+            <div id="w-node-_20c23870-357a-981b-038a-478d79542530-7954252d" class="column">
+              <a href="/" class="w-inline-block"
+                ><img
+                  class="footer-logo"
+                  src="images/logo-acquisition-white.png"
+                  alt=""
+                  sizes="(max-width: 479px) 83vw, (max-width: 767px) 280px, (max-width: 991px) 14vw, 6vw"
+                  loading="lazy"
+                  data-gsap="fade-reveal"
+                  srcset="
+                    images/logo-acquisition-white-p-500.png   500w,
+                    images/logo-acquisition-white-p-800.png   800w,
+                    images/logo-acquisition-white-p-1080.png 1080w,
+                    images/logo-acquisition-white.png        1356w
+                  "
+              /></a>
+            </div>
+            <div id="w-node-_20c23870-357a-981b-038a-478d79542533-7954252d" class="column">
+              <div class="footer-top__nav-wrapper">
+                <div data-gsap="footer-nav" class="footer-top__nav">
+                  <div data-gsap="fade-reveal" class="footer-top__nav-heading">The firm</div>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>About Us</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>Jobs</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>Culture</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>Blog</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                </div>
+                <div data-gsap="footer-nav" class="footer-top__nav">
+                  <div data-gsap="fade-reveal" class="footer-top__nav-heading">Learning</div>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>Books</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>Course</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>Media</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                </div>
+                <div data-gsap="footer-nav" class="footer-top__nav">
+                  <div data-gsap="fade-reveal" class="footer-top__nav-heading">Work with us</div>
+                  <a href="application-form" aria-current="page" class="footer-top__nav-item w-inline-block w--current">
+                    <div>Apply</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                  <a href="#" lenis-link="faq" class="footer-top__nav-item w-inline-block">
+                    <div>FAQs</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                  <a href="#" class="footer-top__nav-item w-inline-block">
+                    <div>Speaking</div>
+                    <div class="footer-top__nav-underline"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="grid-12-g3">
+              <div id="w-node-_20c23870-357a-981b-038a-478d79542568-7954252d" class="column">
+                <p data-gsap="fade-reveal" class="m-0">© 2023 Acquisition.com LLC. All rights reserved.</p>
+              </div>
+              <div id="w-node-_20c23870-357a-981b-038a-478d7954256b-7954252d" class="column">
+                <div data-gsap="fade-reveal" class="footer-bottom__nav">
+                  <a href="#" class="footer-bottom__nav-item">Terms</a>
+                  <a href="#" class="footer-bottom__nav-item">Privacy</a>
+                  <a href="#" class="footer-bottom__nav-item">Cookies</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="mobile-menu">
+      <div data-lenis-toggle="" class="mobile-menu-overlay"></div>
+      <div class="mobile-menu-wrapper">
+        <header class="mobile-menu__header">
+          <div class="logo">
+            <a href="/" class="w-inline-block"
+              ><img
+                src="images/logo-acquisition-white.png"
+                loading="lazy"
+                sizes="(max-width: 479px) 42vw, (max-width: 991px) 200px, 16vw"
+                srcset="
+                  images/logo-acquisition-white-p-500.png   500w,
+                  images/logo-acquisition-white-p-800.png   800w,
+                  images/logo-acquisition-white-p-1080.png 1080w,
+                  images/logo-acquisition-white.png        1356w
+                "
+                alt=""
+                class="logo-img"
+            /></a>
+          </div>
+          <div data-lenis-toggle="" class="close-btn">
+            <div class="close-btn__text">Close</div>
+            <div class="close-btn__icon">
+              <div class="mobile-menu-close__line close-1"></div>
+              <div class="mobile-menu-close__line close-2"></div>
+            </div>
+          </div>
+        </header>
+        <div data-lenis-prevent="" class="mobile-menu__content">
+          <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="nav mobile-menu__nav w-nav">
+            <nav role="navigation" class="nav-menu w-nav-menu">
+              <div data-hover="true" data-delay="0" class="nav-item dropdown-v2 w-dropdown">
+                <div class="nav-item__toggle w-dropdown-toggle">
+                  <div class="nav-item__toggle-text">Home</div>
+                  <div class="nav-item__toggle--icon-bold w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="uuid-02e0b084-52cb-4933-b905-684f734ba0f3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 80 80">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #190731;
+                          }
+                        </style>
+                      </defs>
+                      <rect class="cls-1" x="31.91" y="34.47" width="31.11" height="10" transform="translate(-14 45.12) rotate(-45)"></rect>
+                      <rect class="cls-1" x="27.54" y="23.91" width="10" height="31.11" transform="translate(-18.38 34.56) rotate(-45)"></rect>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="nav-item__dropdown w-dropdown-list">
+                  <div class="nav-item__dropdown-wrapper">
+                    <a href="/" class="dropdown-item nav-item w-dropdown-link">Home v1</a>
+                    <a href="home-v2" class="dropdown-item nav-item w-dropdown-link">Home v2</a>
+                  </div>
+                </nav>
+              </div>
+              <a href="#" class="nav-item w-nav-link">About Us</a>
+              <div data-hover="true" data-delay="0" class="nav-item dropdown-v2 w-dropdown">
+                <div class="nav-item__toggle w-dropdown-toggle">
+                  <div class="nav-item__toggle-text">Training</div>
+                  <div class="nav-item__toggle--icon-bold w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="uuid-02e0b084-52cb-4933-b905-684f734ba0f3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 80 80">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #190731;
+                          }
+                        </style>
+                      </defs>
+                      <rect class="cls-1" x="31.91" y="34.47" width="31.11" height="10" transform="translate(-14 45.12) rotate(-45)"></rect>
+                      <rect class="cls-1" x="27.54" y="23.91" width="10" height="31.11" transform="translate(-18.38 34.56) rotate(-45)"></rect>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="nav-item__dropdown w-dropdown-list">
+                  <div class="nav-item__dropdown-wrapper">
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Books</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Courses</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Media</a>
+                  </div>
+                </nav>
+              </div>
+              <a href="#" class="nav-item w-nav-link">Speaking</a>
+              <div data-hover="true" data-delay="0" class="nav-item dropdown-v2 w-dropdown">
+                <div class="nav-item__toggle w-dropdown-toggle">
+                  <div class="nav-item__toggle-text">Careers</div>
+                  <div class="nav-item__toggle--icon-bold w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="uuid-02e0b084-52cb-4933-b905-684f734ba0f3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 80 80">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #190731;
+                          }
+                        </style>
+                      </defs>
+                      <rect class="cls-1" x="31.91" y="34.47" width="31.11" height="10" transform="translate(-14 45.12) rotate(-45)"></rect>
+                      <rect class="cls-1" x="27.54" y="23.91" width="10" height="31.11" transform="translate(-18.38 34.56) rotate(-45)"></rect>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="nav-item__dropdown w-dropdown-list">
+                  <div class="nav-item__dropdown-wrapper">
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Jobs</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Culture</a>
+                    <a href="#" class="dropdown-item nav-item w-dropdown-link">Blog</a>
+                  </div>
+                </nav>
+              </div>
+              <a href="#" lenis-link="faq" class="nav-item w-nav-link">FAQs</a>
+              <a href="application-form" class="nav-item mobile-nav-cta w-nav-link">Apply</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/index.min.js"></script>
+  </body>
+</html>
