@@ -19,6 +19,10 @@
   visibility: hidden;
 }
 
+[data-gsap=text-clip-reveal] .word {
+  line-height: 1;
+}
+
 [data-gsap="text-clip-reveal"] .word,
 .home-hero-h1 .word {
   overflow: hidden;
@@ -437,7 +441,7 @@ p a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--primary-900);
+  background-color: var(--white);
   z-index: 0;
   transform: scale(var(--bgScale));
   border-radius: 50%;
@@ -448,7 +452,7 @@ p a:hover {
   position: absolute;
   width: 40px;
   height: 40px;
-  background: url("https://uploads-ssl.webflow.com/63551553f9e1cc2dbed13450/644aae3b8c37ee06995cba25_play_arrow_white_24dp.svg");
+  background: url("https://uploads-ssl.webflow.com/63551553f9e1cc2dbed13450/65ef8287a024dc5af672f46e_play_arrow_p500_24dp.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
