@@ -207,7 +207,41 @@ function initAnimations() {
       splitText(text);
     });
   }
+  /* 
+  //////////////////////////////////////// Text Clip Reveal
+  let textClipRevealTargets = document.querySelectorAll(
+    '[data-gsap="text-clip-reveal"]'
+  );
+
+  if(textClipRevealTargets && splitText) {
+    textClipRevealTargets.forEach((text) => textClipReveal(text));
+
+    function textClipReveal(elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        onEnter: () => {
+          gsap.set(elem, { autoAlpha: 1 });
   
+          let words = elem.querySelectorAll(".word span");
+          words.forEach((word) => {
+            gsap.fromTo(
+              word,
+              {
+                visibility: "inherit",
+                opacity: 1,
+                yPercent: 101,
+              },
+              {
+                duration: 1.5,
+                stagger: 0.2,
+                yPercent: 0,
+              }
+            );
+          });
+        },
+      });
+    }
+  } */
   
 
   //////////////////// Fade reveal
