@@ -207,7 +207,7 @@ function initAnimations() {
       splitText(text);
     });
   }
-  /* 
+  
   //////////////////////////////////////// Text Clip Reveal
   let textClipRevealTargets = document.querySelectorAll(
     '[data-gsap="text-clip-reveal"]'
@@ -241,7 +241,7 @@ function initAnimations() {
         },
       });
     }
-  } */
+  }
   
 
   //////////////////// Fade reveal
@@ -513,7 +513,7 @@ function initAnimations() {
         hide(homeHeroGlow);
         hide(homeHeroForm);
 
-        //homeHeroTL.call(textClipReveal, [homeHeroH1], 0.25);
+        homeHeroTL.call(textClipReveal, [homeHeroH1], 0.25);
         homeHeroP ? homeHeroTL.call(fadeReveal, [homeHeroP], 0.75) : null;
         homeHeroTL
           .call(isDesktop ? maskReveal : fadeReveal, [homeHeroForm], 0.25)

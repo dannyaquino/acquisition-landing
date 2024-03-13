@@ -3,6 +3,8 @@
 [data-gsap="fade-up-reveal"],
 [data-gsap="fade-reveal"],
 [data-gsap="mask-reveal"],
+[data-gsap="text-clip-reveal"],
+[data-gsap="text-clip-reveal"] .word *,
 [data-gsap="icons-horizontal"] > *,
 [data-gsap="card-group"],
 [data-gsap="footer-nav"] a,
@@ -17,18 +19,10 @@
   visibility: hidden;
 }
 
-[data-gsap=text-clip-reveal] .word {
-  line-height: 1;
-}
-
 [data-gsap="text-clip-reveal"] .word,
 .home-hero-h1 .word {
   overflow: hidden;
-}
-
-[data-gsap="text-clip-reveal"] .word span,
-.home-hero-h1 .word span {
-  display: inline-block;
+  vertical-align: bottom;
 }
 
 .form-step.active-step {
