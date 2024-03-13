@@ -19,10 +19,16 @@
   visibility: hidden;
 }
 
+/* vertical-align:bottom fixes height issue on inline elements such as spans inside headings */
 [data-gsap="text-clip-reveal"] .word,
 .home-hero-h1 .word {
   overflow: hidden;
   vertical-align: bottom;
+}
+
+[data-gsap="text-clip-reveal"] .word *,
+.home-hero-h1 .word * {
+  display: inline-block;
 }
 
 .form-step.active-step {
