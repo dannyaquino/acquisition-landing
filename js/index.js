@@ -185,7 +185,7 @@ function initAnimations() {
       },
     });
   }
-/*
+
   //////////////////////////////////////// Split-Type
   function splitText(elem) {
     const split = new SplitType(elem, {
@@ -207,7 +207,7 @@ function initAnimations() {
       splitText(text);
     });
   }
-  
+  /* 
   //////////////////////////////////////// Text Clip Reveal
   let textClipRevealTargets = document.querySelectorAll(
     '[data-gsap="text-clip-reveal"]'
