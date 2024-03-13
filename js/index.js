@@ -185,7 +185,7 @@ function initAnimations() {
       },
     });
   }
-
+/*
   //////////////////////////////////////// Split-Type
   function splitText(elem) {
     const split = new SplitType(elem, {
@@ -201,41 +201,48 @@ function initAnimations() {
   let splitTextTargets = document.querySelectorAll(
     '[data-gsap="text-clip-reveal"], .home-hero-h1'
   );
-  splitTextTargets.forEach((text) => {
-    splitText(text);
-  });
 
+  if (splitTextTargets) {
+    splitTextTargets.forEach((text) => {
+      splitText(text);
+    });
+  }
+  
   //////////////////////////////////////// Text Clip Reveal
   let textClipRevealTargets = document.querySelectorAll(
     '[data-gsap="text-clip-reveal"]'
   );
-  textClipRevealTargets.forEach((text) => textClipReveal(text));
 
-  function textClipReveal(elem) {
-    ScrollTrigger.create({
-      trigger: elem,
-      onEnter: () => {
-        gsap.set(elem, { autoAlpha: 1 });
+  if(textClipRevealTargets && splitText) {
+    textClipRevealTargets.forEach((text) => textClipReveal(text));
 
-        let words = elem.querySelectorAll(".word span");
-        words.forEach((word) => {
-          gsap.fromTo(
-            word,
-            {
-              visibility: "inherit",
-              opacity: 1,
-              yPercent: 101,
-            },
-            {
-              duration: 1.5,
-              stagger: 0.2,
-              yPercent: 0,
-            }
-          );
-        });
-      },
-    });
-  }
+    function textClipReveal(elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        onEnter: () => {
+          gsap.set(elem, { autoAlpha: 1 });
+  
+          let words = elem.querySelectorAll(".word span");
+          words.forEach((word) => {
+            gsap.fromTo(
+              word,
+              {
+                visibility: "inherit",
+                opacity: 1,
+                yPercent: 101,
+              },
+              {
+                duration: 1.5,
+                stagger: 0.2,
+                yPercent: 0,
+              }
+            );
+          });
+        },
+      });
+    }
+  } */
+  
 
   //////////////////// Fade reveal
   function fadeReveal(elem) {
@@ -930,7 +937,7 @@ function initCustomForms() {
               const { contentRect } = entry;
               width = Math.floor(contentRect.width);
               // Only proceed if 1) `formStepsWrapperWidth` has been set (this avoids
-              // calling the split method when the resize observer is triggered on the
+              // calling the resizeSteps method when the resize observer is triggered on the
               // initial render) and 2) if the width of the container element has
               // changed.
               if (

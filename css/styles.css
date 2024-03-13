@@ -3,8 +3,6 @@
 [data-gsap="fade-up-reveal"],
 [data-gsap="fade-reveal"],
 [data-gsap="mask-reveal"],
-[data-gsap="text-clip-reveal"],
-[data-gsap="text-clip-reveal"] .word *,
 [data-gsap="icons-horizontal"] > *,
 [data-gsap="card-group"],
 [data-gsap="footer-nav"] a,
